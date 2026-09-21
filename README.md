@@ -194,7 +194,7 @@ A Flask-based web dashboard provides access to the recorded information.
 The web interface is separated from the real-time perception pipeline and communicates with the Firebase database.
 
 ## Publications and Performance Analysis
-1. Real-Time Object Detection for Automotive Systems With FMCW Radar-Based Sensor Fusion
+###1.Real-Time Object Detection for Automotive Systems With FMCW Radar-Based Sensor Fusion
 
 27th International Radar Symposium (IRS 2026)
 Kraków, Poland, 19–21 May 2026
@@ -204,7 +204,7 @@ This work presents a radar-centric multi-sensor perception framework combining F
 
 DOI: 10.23919/IRS70539.2026.11548965
 IEEE Xplore
-2.Enhanced Object Detection for Vehicle Safety through Multi-Sensor Fusion
+###2.Enhanced Object Detection for Vehicle Safety through Multi-Sensor Fusion
 
 2025 16th International Conference on Electrical and Electronics Engineering (ELECO 2025)
 Bursa, Türkiye, 2025
