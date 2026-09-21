@@ -238,11 +238,13 @@ git clone https://github.com/atcna/DEYSET.git
 cd DEYSET
 ```
 2. Create a Python environment where appropriate:
-```python3 -m venv venv
+```bash
+python3 -m venv venv
 source venv/bin/activate
 ```
 3. Install the Python dependencies:
-```pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 ```
 Hardware-specific components such as NVIDIA DeepStream, Jetson.GPIO, camera drivers, and LiDAR/radar interfaces may require platform-specific installation steps.
 
