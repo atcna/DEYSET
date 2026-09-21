@@ -227,3 +227,34 @@ The general system workflow is:
 9. Evaluate collision risk
 10. Trigger warnings
 11. Log events to Firebase
+
+
+## Installation
+The main processing system is designed for NVIDIA Jetson hardware with the required NVIDIA software stack installed.
+
+- Clone the repository:
+git clone https://github.com/atcna/DEYSET.git
+cd DEYSET
+
+- Create a Python environment where appropriate:
+python3 -m venv venv
+source venv/bin/activate
+
+- Install the Python dependencies:
+pip install -r requirements.txt
+Hardware-specific components such as NVIDIA DeepStream, Jetson.GPIO, camera drivers, and LiDAR/radar interfaces may require platform-specific installation steps.
+
+- Detailed setup instructions will be provided in:
+docs/setup_jetson.md
+
+## Configuration 
+Sensitive credentials and configuration files are intentionally excluded from this repository.
+
+Examples include:
+- Firebase service-account credentials
+- API keys
+- Passwords
+- Secret keys
+- Local hardware-specific configuration
+
+Use the example configuration files provided in the repository and configure the system locally.
