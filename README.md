@@ -93,26 +93,26 @@ The general processing flow is:
 - DeepStream 7.1
 
 ### Programming and Processing
-Python
-C/C++
-NumPy
-SciPy
-scikit-learn
-OpenCV
+- Python
+- C/C++
+- NumPy
+- SciPy
+- scikit-learn
+- OpenCV
 
 ### Computer Vision
-YOLO-based object detection
-NVIDIA DeepStream
-NVIDIA TensorRT
+- YOLO-based object detection
+- NVIDIA DeepStream
+- NVIDIA TensorRT
 
 ### Sensor Processing
-RPLIDAR A1M8
-RFbeam K-MD2 FMCW radar
-DBSCAN-based LiDAR clustering
-Range-Doppler processing
+- RPLIDAR A1M8
+- RFbeam K-MD2 FMCW radar
+- DBSCAN-based LiDAR clustering
+- Range-Doppler processing
 
 ### Monitoring
-Firebase Realtime Database
-Flask
-HTML/CSS/JavaScript
+- Firebase Realtime Database
+- Flask
+- HTML/CSS/JavaScript
 
