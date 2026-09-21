@@ -84,13 +84,13 @@ The general processing flow is:
 
 ## Software Stack
 ### Operating System and NVIDIA Platform
-Ubuntu 22.04
-NVIDIA JetPack 6.2
-L4T 36.4.3
-CUDA 12.6
-cuDNN 9.3
-TensorRT 10.3
-DeepStream 7.1
+- Ubuntu 22.04
+- NVIDIA JetPack 6.2
+- L4T 36.4.3
+- CUDA 12.6
+- cuDNN 9.3
+- TensorRT 10.3
+- DeepStream 7.1
 
 ### Programming and Processing
 Python
