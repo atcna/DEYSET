@@ -233,15 +233,17 @@ The general system workflow is:
 The main processing system is designed for NVIDIA Jetson hardware with the required NVIDIA software stack installed.
 
 1. Clone the repository
+```bash
 git clone https://github.com/atcna/DEYSET.git
 cd DEYSET
-
-Create a Python environment where appropriate:
-python3 -m venv venv
+```
+2. Create a Python environment where appropriate:
+```python3 -m venv venv
 source venv/bin/activate
-
-Install the Python dependencies:
-pip install -r requirements.txt
+```
+3. Install the Python dependencies:
+```pip install -r requirements.txt
+```
 Hardware-specific components such as NVIDIA DeepStream, Jetson.GPIO, camera drivers, and LiDAR/radar interfaces may require platform-specific installation steps.
 
 Detailed setup instructions will be provided in:
