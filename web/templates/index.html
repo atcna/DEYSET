@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sürücü RFID Takibi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>📋 Sürücü Girişleri</h2>
+    <table>
+        <tr>
+            <th>İsim</th>
+            <th>RFID</th>
+            <th>Tarih</th>
+            <th>Saat</th>
+        </tr>
+        {% for entry in entries %}
+        <tr>
+            <td>{{ entry['isim'] }}</td>
+            <td>{{ entry['rfid'] }}</td>
+            <td>{{ entry['tarih'] }}</td>
+            <td>{{ entry['saat'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

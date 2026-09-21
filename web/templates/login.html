@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Yap</title>
+    <style>
+        body { font-family: Arial; background: #f0f0f0; display: flex; height: 100vh; align-items: center; justify-content: center; }
+        form { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
+        input { display: block; margin: 10px 0; padding: 8px; width: 100%; }
+        button { padding: 10px; width: 100%; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <h2>RFID Takip Giriş</h2>
+        <input type="text" name="username" placeholder="Kullanıcı adı" required>
+        <input type="password" name="password" placeholder="Şifre" required>
+        <button type="submit">Giriş Yap</button>
+        {% if error %}
+            <p style="color: red; font-size: 0.9em;">{{ error }}</p>
+        {% endif %}
+    </form>
+</body>
+</html>

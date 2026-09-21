@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ user_name }} – {{ date }} Kayıtları</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Menü</h3>
+    <a href="{{ url_for('dashboard', tab='suruculer') }}">Sürücüler</a>
+    <a href="{{ url_for('dashboard', tab='kayitlar') }}">Kayıtlar</a>
+    <a href="{{ url_for('dashboard', tab='tehlikeli') }}">Tehlikeli Durumlar</a>
+    <a href="{{ url_for('dashboard', tab='konum') }}">Konum</a>
+    <a href="{{ url_for('logout') }}">Çıkış</a>
+  </div>
+
+  <div class="content">
+    <h2>{{ user_name }} – {{ date }} Kayıtları</h2>
+
+    <div class="performance">
+      <h3>PERFORMANS: {{ performance_score }}</h3>
+      <p>{{ performance_category }}</p>
+    </div>
+    <hr/>
+
+    {% if entries %}
+      {% for e in entries %}
+        <div class="log-entry">
+          <h4>{{ e.saat }}</h4>
+          <ul>
+            <li><strong>Hız İhlali:</strong> {{ e.uyarilar['HIZ_IHLALI'] }}</li>
+            <li><strong>Sigara:</strong> {{ e.uyarilar['SIGARA'] }}</li>
+            <li><strong>Tehlikeli Araç:</strong> {{ e.uyarilar['TEHLIKELI_ARAC'] }}</li>
+            <li><strong>Tehlikeli İnsan:</strong> {{ e.uyarilar['TEHLIKELI_INSAN'] }}</li>
+            <li><strong>Telefon:</strong> {{ e.uyarilar['TELEFON'] }}</li>
+            <li><strong>Uyku Durumu:</strong> {{ e.uyarilar['UYKU_DURUMU'] }}</li>
+          </ul>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>Bu tarihe ait kayıt bulunamadı.</p>
+    {% endif %}
+
+    <a href="{{ url_for('user_logs', user_id=user_id) }}" class="back-link">⬅ Tarih Listesine Dön</a>
+  </div>
+</body>
+</html>

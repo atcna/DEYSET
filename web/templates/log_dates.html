@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ user_name }} – Kayıt Tarihleri</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Menü</h3>
+    <a href="{{ url_for('dashboard', tab='suruculer') }}">Sürücüler</a>
+    <a href="{{ url_for('dashboard', tab='kayitlar') }}">Kayıtlar</a>
+    <a href="{{ url_for('dashboard', tab='tehlikeli') }}">Tehlikeli Durumlar</a>
+    <a href="{{ url_for('dashboard', tab='konum') }}">Konum</a>
+    <a href="{{ url_for('logout') }}">Çıkış</a>
+  </div>
+
+  <div class="content">
+    <h2>{{ user_name }} – Kayıt Tarihleri</h2>
+
+    {% if date_scores %}
+      <ul class="date-list">
+        {% for ds in date_scores %}
+          <li>
+            <a href="{{ url_for('user_logs', user_id=user_id, date=ds.date) }}">
+              {{ ds.date }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <canvas id="perfChart" width="600" height="300"></canvas>
+      <script>
+        const dateScores = {{ date_scores|tojson }};
+        const labels     = dateScores.map(ds => ds.date);
+        const dataPoints = dateScores.map(ds => ds.score);
+
+        const ctx = document.getElementById('perfChart').getContext('2d');
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Performans',
+              data: dataPoints,
+              fill: false,
+              tension: 0.3,
+              pointRadius: 5
+            }]
+          },
+          options: {
+            scales: {
+              x: {
+                title: { display: true, text: 'Tarih' }
+              },
+              y: {
+                title: { display: true, text: 'Performans Puanı' }
+              }
+            },
+            plugins: {
+              legend: { display: false }
+            }
+          }
+        });
+      </script>
+
+    {% else %}
+      <p>Henüz kayıtlı bir tarih yok.</p>
+    {% endif %}
+
+    <a href="{{ url_for('dashboard', tab='kayitlar') }}" class="back-link">⬅ Kullanıcı Listesine Dön</a>
+  </div>
+</body>
+</html>

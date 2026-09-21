@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RFID Takip Paneli</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menü</h3>
+        <a href="{{ url_for('dashboard', tab='suruculer') }}">Sürücüler</a>
+        <a href="{{ url_for('dashboard', tab='kayitlar') }}">Kayıtlar</a>
+        <a href="{{ url_for('dashboard', tab='tehlikeli') }}">Tehlikeli Durumlar</a>
+        <a href="{{ url_for('dashboard', tab='konum') }}">Konum</a>
+        <a href="{{ url_for('logout') }}">Çıkış</a>
+    </div>
+    
+    <div class="content">
+        {% if tab == 'suruculer' %}
+            {% include 'partials/suruculer.html' %}
+        {% elif tab == 'kayitlar' %}
+            {% include 'partials/kayitlar.html' %}
+        {% elif tab == 'tehlikeli' %}
+            {% include 'partials/tehlikeli.html' %}
+        {% elif tab == 'konum' %}
+            {% include 'partials/konum.html' %}
+        {% endif %}
+    </div>
+</body>
+</html>
