@@ -232,7 +232,7 @@ The general system workflow is:
 ## Installation
 The main processing system is designed for NVIDIA Jetson hardware with the required NVIDIA software stack installed.
 
-- Clone the repository:
+1. Clone the repository
 git clone https://github.com/atcna/DEYSET.git
 cd DEYSET
 
