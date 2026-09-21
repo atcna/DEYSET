@@ -212,3 +212,18 @@ The web interface is separated from the real-time perception pipeline and commun
 
 - This work presents the DEYSET multi-sensor ADAS framework, combining camera-based object detection, LiDAR-based ranging, and FMCW radar sensing for real-time object detection and collision-risk assessment.
 - IEEE Xplore
+## Usage
+
+The general system workflow is:
+
+1. Connect the sensors
+2. Initialize the LiDAR
+3. Initialize the radar
+4. Initialize the camera
+5. Start the DeepStream pipeline
+6. Detect objects
+7. Process LiDAR and radar measurements
+8. Correlate sensor information
+9. Evaluate collision risk
+10. Trigger warnings
+11. Log events to Firebase
