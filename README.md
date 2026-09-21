@@ -196,19 +196,19 @@ The web interface is separated from the real-time perception pipeline and commun
 ## Publications and Performance Analysis
 ###1.Real-Time Object Detection for Automotive Systems With FMCW Radar-Based Sensor Fusion
 
-27th International Radar Symposium (IRS 2026)
-Kraków, Poland, 19–21 May 2026
-Authors: Atacan Akpınar, Doğa Tik, Berke Özbay, Beyza Nur Erkan, Elif Aydın
+- 27th International Radar Symposium (IRS 2026)
+- Kraków, Poland, 19–21 May 2026
+- Authors: Atacan Akpınar, Doğa Tik, Berke Özbay, Beyza Nur Erkan, Elif Aydın
 
-This work presents a radar-centric multi-sensor perception framework combining FMCW radar, camera-based deep learning detections, and LiDAR-based spatial ranging for real-time collision-risk assessment. The study focuses on Doppler-derived radial velocity and radar-assisted target association.
+- This work presents a radar-centric multi-sensor perception framework combining FMCW radar, camera-based deep learning detections, and LiDAR-based spatial ranging for real-time collision-risk assessment. The study focuses on Doppler-derived radial velocity and radar-assisted target association.
 
-DOI: 10.23919/IRS70539.2026.11548965
-IEEE Xplore
+- DOI: 10.23919/IRS70539.2026.11548965
+- IEEE Xplore
 ###2.Enhanced Object Detection for Vehicle Safety through Multi-Sensor Fusion
 
-2025 16th International Conference on Electrical and Electronics Engineering (ELECO 2025)
-Bursa, Türkiye, 2025
-Authors: Beyza Nur Erkan, Atacan Akpınar, Berke Özbay, Doğa Tik, Elif Aydın
+- 2025 16th International Conference on Electrical and Electronics Engineering (ELECO 2025)
+- Bursa, Türkiye, 2025
+- Authors: Beyza Nur Erkan, Atacan Akpınar, Berke Özbay, Doğa Tik, Elif Aydın
 
-This work presents the DEYSET multi-sensor ADAS framework, combining camera-based object detection, LiDAR-based ranging, and FMCW radar sensing for real-time object detection and collision-risk assessment.
-IEEE Xplore
+- This work presents the DEYSET multi-sensor ADAS framework, combining camera-based object detection, LiDAR-based ranging, and FMCW radar sensing for real-time object detection and collision-risk assessment.
+- IEEE Xplore
