@@ -83,7 +83,7 @@ The general processing flow is:
 | Buzzer                        | Audible warning mechanism |
 
 ## Software Stack
-Operating System and NVIDIA Platform
+### Operating System and NVIDIA Platform
 Ubuntu 22.04
 NVIDIA JetPack 6.2
 L4T 36.4.3
@@ -92,7 +92,7 @@ cuDNN 9.3
 TensorRT 10.3
 DeepStream 7.1
 
-Programming and Processing
+### Programming and Processing
 Python
 C/C++
 NumPy
@@ -100,18 +100,18 @@ SciPy
 scikit-learn
 OpenCV
 
-Computer Vision
+### Computer Vision
 YOLO-based object detection
 NVIDIA DeepStream
 NVIDIA TensorRT
 
-Sensor Processing
+### Sensor Processing
 RPLIDAR A1M8
 RFbeam K-MD2 FMCW radar
 DBSCAN-based LiDAR clustering
 Range-Doppler processing
 
-Monitoring
+### Monitoring
 Firebase Realtime Database
 Flask
 HTML/CSS/JavaScript
