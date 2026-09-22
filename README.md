@@ -4,7 +4,7 @@
 
 DEYSET is a real-time automotive perception and collision risk detection system developed as a multi-sensor ADAS research project at Çankaya University.
 
-The project was conducted as an undergraduate research project under the TÜBİTAK 2209-B program and was carried out over approximately 1–2 years. The project also included technical interaction and industry-oriented collaboration with SDT Space & Defense Technologies.
+The project was conducted as an undergraduate research project under the TÜBİTAK 2209-B program and was carried out over 2 years. The project also included technical interaction and industry-oriented collaboration with SDT Space & Defense Technologies.
 
 The system combines camera-based object detection with LiDAR and FMCW radar sensing to improve environmental perception and identify potential collision-risk situations.
 
