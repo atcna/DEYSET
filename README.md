@@ -16,9 +16,10 @@ The project was developed on an NVIDIA Jetson Orin Nano Super platform and integ
 The following demonstration shows the DEYSET real-time multi-sensor perception and collision-risk detection system.
 
 <p align="center">
-  <img src="docs/fusion.gif" alt="DEYSET System Demo" width="550">
-  <img src="docs/blindresult.gif" alt="DEYSET System Blind Spot multi camera " width="550">
+  <img src="docs/fusion.gif" alt="DEYSET System Demo" width="500">
+  <img src="docs/blindresult.gif" alt="DEYSET System Blind Spot multi camera " width="500">
 </p>
+
 ## System Overview
 
 The system combines multiple sensing technologies to provide real-time environmental perception:
