@@ -14,8 +14,8 @@ The project was developed on an NVIDIA Jetson Orin Nano Super platform and integ
 ## Demo
 
 The following demonstration shows the DEYSET real-time multi-sensor perception and collision-risk detection system.
-First video Fusion method.   ---- Second video Blind Spot multi camera input.
-
+- First video Fusion method.  
+- Second video Blind Spot multi camera input.
 <p align="center">
   <img src="docs/fusion.gif" alt="DEYSET System Demo" width="500">
   <img src="docs/blindresult.gif" alt="DEYSET System Blind Spot multi camera " width="500">
