@@ -11,7 +11,13 @@ The system combines camera-based object detection with LiDAR and FMCW radar sens
 The project was developed on an NVIDIA Jetson Orin Nano Super platform and integrates computer vision, LiDAR processing, radar signal processing, sensor fusion, real-time visualization, and cloud-based monitoring.
 
 ---
+## Demo
 
+The following demonstration shows the DEYSET real-time multi-sensor perception and collision-risk detection system.
+
+<p align="center">
+  <img src="docs/fusion.gif" alt="DEYSET System Demo" width="900">
+</p>
 ## System Overview
 
 The system combines multiple sensing technologies to provide real-time environmental perception:
