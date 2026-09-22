@@ -35,3 +35,17 @@ Create a virtual environment:
 python3 -m venv venv
 source venv/bin/activate
 ```
+```markdown
+Install the Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+```markdown
+## DeepStream Python Integration
+
+The DEYSET object detection pipeline uses NVIDIA DeepStream and GStreamer for real-time video processing and neural-network inference.
+
+The Python application interacts with the DeepStream pipeline through the DeepStream Python bindings (`pyds`).
+
+The DeepStream pipeline integrates camera acquisition, stream multiplexing, neural-network inference, video conversion, on-screen display, and frame access.
