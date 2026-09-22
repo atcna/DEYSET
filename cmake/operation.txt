@@ -1,0 +1,26 @@
+```text
+                    DEYSET
+                       │
+          ┌────────────┴────────────┐
+          │                         │
+       Python                    C/C++
+          │                         │
+       pyds                  CMake / native
+          │                         │
+          └────────────┬────────────┘
+                       │
+                NVIDIA DeepStream
+                       │
+                 GStreamer
+                       │
+              NVIDIA Jetson GPU
+
+
+
+ ### Native Development
+
+- C/C++
+- CMake
+- GStreamer
+- NVIDIA DeepStream SDK
+- DeepStream Python bindings (`pyds`)
